@@ -1,0 +1,296 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Pricing - Coursebox AI">
+	<main>
+		<section class="hero">
+			<div class="hero-content">
+				<h1>Simple, transparent pricing</h1>
+				<p class="subtitle">Choose the plan that's right for you</p>
+			</div>
+		</section>
+
+		<section class="pricing">
+			<div class="pricing-grid">
+				<div class="pricing-card">
+					<div class="pricing-header">
+						<h3>Free</h3>
+						<div class="price">
+							<span class="amount">$0</span>
+							<span class="period">/month</span>
+						</div>
+						<p>Perfect for trying out Coursebox AI</p>
+					</div>
+					<ul class="features">
+						<li>✓ GPT 3.5 Turbo</li>
+						<li>✓ 3 Free AI courses</li>
+						<li>✓ Basic quizzes & videos</li>
+						<li>✓ Course marketplace listing</li>
+						<li>✓ Mobile app access</li>
+						<li>✓ 50MB storage</li>
+						<li>✓ 10 active monthly learners</li>
+					</ul>
+					<a href="/get-started" class="btn-primary">Get Started Free</a>
+				</div>
+
+				<div class="pricing-card popular">
+					<div class="popular-badge">Most Popular</div>
+					<div class="pricing-header">
+						<h3>Creator</h3>
+						<div class="price">
+							<span class="amount">$42</span>
+							<span class="period">/month</span>
+						</div>
+						<p>For professional course creators</p>
+					</div>
+					<ul class="features">
+						<li>✓ GPT-4 powered AI</li>
+						<li>✓ AI course outline generator</li>
+						<li>✓ AI quiz & video generator</li>
+						<li>✓ Export as PDF or HTML</li>
+						<li>✓ AI grading with rubrics</li>
+						<li>✓ AI chatbot tutor</li>
+						<li>✓ Private publishing</li>
+						<li>✓ 50 courses total</li>
+						<li>✓ 100 active monthly learners</li>
+						<li>✓ 1GB storage</li>
+					</ul>
+					<a href="/get-started" class="btn-primary">Start Free Trial</a>
+				</div>
+
+				<div class="pricing-card">
+					<div class="pricing-header">
+						<h3>Expert</h3>
+						<div class="price">
+							<span class="amount">$83</span>
+							<span class="period">/month</span>
+						</div>
+						<p>For growing training businesses</p>
+					</div>
+					<ul class="features">
+						<li>✓ All Creator features</li>
+						<li>✓ Monthly subscriptions</li>
+						<li>✓ Group management</li>
+						<li>✓ Zapier integrations</li>
+						<li>✓ 200 courses total</li>
+						<li>✓ 200 active monthly learners</li>
+						<li>✓ Events & scheduling</li>
+						<li>✓ 2GB storage</li>
+						<li>✓ Bulk enrollments</li>
+					</ul>
+					<a href="/get-started" class="btn-primary">Start Free Trial</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="enterprise">
+			<div class="enterprise-content">
+				<h2>Enterprise Solutions</h2>
+				<p>Need a custom solution for your organization?</p>
+				<div class="enterprise-features">
+					<div class="feature">
+						<h4>White Label Platform</h4>
+						<p>Brand the entire platform as your own</p>
+					</div>
+					<div class="feature">
+						<h4>Custom Integration</h4>
+						<p>Connect with your existing systems</p>
+					</div>
+					<div class="feature">
+						<h4>Dedicated Support</h4>
+						<p>Priority support and training</p>
+					</div>
+				</div>
+				<a href="/contact" class="btn-secondary">Contact Sales</a>
+			</div>
+		</section>
+
+		<section class="faq">
+			<h2>Frequently Asked Questions</h2>
+			<div class="faq-grid">
+				<div class="faq-item">
+					<h4>Can I switch plans anytime?</h4>
+					<p>Yes, you can upgrade or downgrade your plan at any time. Changes will be reflected in your next billing cycle.</p>
+				</div>
+				<div class="faq-item">
+					<h4>Is there a free trial?</h4>
+					<p>Yes, all paid plans come with a free trial period so you can test all features before committing.</p>
+				</div>
+				<div class="faq-item">
+					<h4>What payment methods do you accept?</h4>
+					<p>We accept all major credit cards, PayPal, and offer invoice payment for enterprise customers.</p>
+				</div>
+				<div class="faq-item">
+					<h4>Can I cancel anytime?</h4>
+					<p>Yes, you can cancel your subscription at any time with no questions asked.</p>
+				</div>
+			</div>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin-top: 4rem;
+	}
+
+	.hero {
+		background: linear-gradient(to right, #4f46e5, #6366f1);
+		color: white;
+		padding: 6rem 2rem;
+		text-align: center;
+	}
+
+	.hero-content {
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
+	h1 {
+		font-size: 3rem;
+		font-weight: 800;
+		margin-bottom: 1rem;
+	}
+
+	.subtitle {
+		font-size: 1.5rem;
+	}
+
+	.pricing {
+		padding: 4rem 2rem;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.pricing-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+	}
+
+	.pricing-card {
+		background: white;
+		border-radius: 0.5rem;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+		padding: 2rem;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.pricing-card.popular {
+		border: 2px solid var(--primary-color);
+		transform: scale(1.05);
+	}
+
+	.popular-badge {
+		position: absolute;
+		top: -12px;
+		left: 50%;
+		transform: translateX(-50%);
+		background: var(--primary-color);
+		color: white;
+		padding: 0.25rem 1rem;
+		border-radius: 1rem;
+		font-size: 0.875rem;
+	}
+
+	.pricing-header {
+		text-align: center;
+		margin-bottom: 2rem;
+	}
+
+	.pricing-header h3 {
+		font-size: 1.5rem;
+		margin-bottom: 1rem;
+	}
+
+	.price {
+		margin-bottom: 1rem;
+	}
+
+	.amount {
+		font-size: 3rem;
+		font-weight: bold;
+	}
+
+	.period {
+		color: #6b7280;
+	}
+
+	.features {
+		list-style: none;
+		padding: 0;
+		margin-bottom: 2rem;
+		flex-grow: 1;
+	}
+
+	.features li {
+		margin-bottom: 0.75rem;
+		color: #6b7280;
+	}
+
+	.enterprise {
+		background: #f9fafb;
+		padding: 4rem 2rem;
+		text-align: center;
+	}
+
+	.enterprise-content {
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
+	.enterprise-features {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		gap: 2rem;
+		margin: 2rem 0;
+	}
+
+	.feature h4 {
+		color: var(--primary-color);
+		margin-bottom: 0.5rem;
+	}
+
+	.faq {
+		padding: 4rem 2rem;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.faq h2 {
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+
+	.faq-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+	}
+
+	.faq-item h4 {
+		color: var(--primary-color);
+		margin-bottom: 0.5rem;
+	}
+
+	.faq-item p {
+		color: #6b7280;
+	}
+
+	@media (max-width: 768px) {
+		.pricing-card.popular {
+			transform: none;
+		}
+
+		h1 {
+			font-size: 2rem;
+		}
+
+		.subtitle {
+			font-size: 1.25rem;
+		}
+	}
+</style> 

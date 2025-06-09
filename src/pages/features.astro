@@ -1,0 +1,264 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Features - Coursebox AI">
+	<main>
+		<section class="hero">
+			<div class="hero-content">
+				<h1>AI Course Creator</h1>
+				<p class="subtitle">Generate interactive e-learning content in minutes</p>
+				<ul class="feature-list">
+					<li>✓ Convert files into online courses</li>
+					<li>✓ Generate videos, quizzes, voiceovers, images, and tutor chatbots</li>
+					<li>✓ Export your content or integrate with your LMS</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="features-grid">
+			<div class="feature-card">
+				<h3>Files to Course</h3>
+				<p>Convert your existing videos, documents, and websites into engaging online courses. Make the most of your resources and save time on content creation.</p>
+				<ul>
+					<li>Upload any document format</li>
+					<li>Automatic content structuring</li>
+					<li>Smart content organization</li>
+				</ul>
+			</div>
+
+			<div class="feature-card">
+				<h3>AI Video Generator</h3>
+				<p>Create professional training videos in minutes without expensive production costs. Perfect for demonstrations, explanations, and course introductions.</p>
+				<ul>
+					<li>Multiple video styles</li>
+					<li>AI-powered voiceovers</li>
+					<li>Custom branding options</li>
+				</ul>
+			</div>
+
+			<div class="feature-card">
+				<h3>AI Assessment</h3>
+				<p>Provide instant grading and feedback to your learners based on your marking rubric and criteria. Save time while maintaining assessment quality.</p>
+				<ul>
+					<li>Automated grading</li>
+					<li>Custom rubric creation</li>
+					<li>Detailed feedback generation</li>
+				</ul>
+			</div>
+
+			<div class="feature-card">
+				<h3>AI Tutor Chatbot</h3>
+				<p>Give your learners 24/7 support with an AI chatbot trained on your course content. Answer questions and provide guidance instantly.</p>
+				<ul>
+					<li>Course-specific training</li>
+					<li>Natural conversation flow</li>
+					<li>Continuous learning</li>
+				</ul>
+			</div>
+
+			<div class="feature-card">
+				<h3>AI Quiz Generator</h3>
+				<p>Create engaging quizzes and assessments automatically. Generate multiple choice, open-ended questions, and complete answer keys.</p>
+				<ul>
+					<li>Multiple question types</li>
+					<li>Automatic answer generation</li>
+					<li>Difficulty level adjustment</li>
+				</ul>
+			</div>
+
+			<div class="feature-card">
+				<h3>White Label Platform</h3>
+				<p>Brand your learning platform, mobile app, and courses for a seamless learner experience. Maintain your professional identity.</p>
+				<ul>
+					<li>Custom branding</li>
+					<li>Branded mobile app</li>
+					<li>Domain customization</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="integration">
+			<h2>Seamless Integration</h2>
+			<p>Connect Coursebox AI with your existing systems</p>
+			<div class="integration-grid">
+				<div class="integration-item">
+					<h4>LMS Integration</h4>
+					<p>Works with popular learning management systems</p>
+				</div>
+				<div class="integration-item">
+					<h4>SCORM Export</h4>
+					<p>Export courses in standard SCORM format</p>
+				</div>
+				<div class="integration-item">
+					<h4>API Access</h4>
+					<p>Custom integration via our robust API</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="cta">
+			<h2>Ready to revolutionize your training?</h2>
+			<p>Join 70,000+ training providers who trust Coursebox AI</p>
+			<div class="cta-buttons">
+				<a href="/get-started" class="btn-primary">Start Free Trial</a>
+				<a href="/demo" class="btn-secondary">Request Demo</a>
+			</div>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin-top: 4rem;
+	}
+
+	.hero {
+		background: linear-gradient(to right, #4f46e5, #6366f1);
+		color: white;
+		padding: 6rem 2rem;
+		text-align: center;
+	}
+
+	.hero-content {
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
+	h1 {
+		font-size: 3rem;
+		font-weight: 800;
+		margin-bottom: 1rem;
+	}
+
+	.subtitle {
+		font-size: 1.5rem;
+		margin-bottom: 2rem;
+	}
+
+	.feature-list {
+		list-style: none;
+		padding: 0;
+		font-size: 1.2rem;
+		line-height: 2;
+	}
+
+	.features-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+		padding: 4rem 2rem;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.feature-card {
+		background: white;
+		padding: 2rem;
+		border-radius: 0.5rem;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	}
+
+	.feature-card h3 {
+		color: var(--primary-color);
+		margin-bottom: 1rem;
+	}
+
+	.feature-card p {
+		margin-bottom: 1rem;
+		color: #6b7280;
+	}
+
+	.feature-card ul {
+		list-style: none;
+		padding: 0;
+	}
+
+	.feature-card ul li {
+		margin-bottom: 0.5rem;
+		padding-left: 1.5rem;
+		position: relative;
+	}
+
+	.feature-card ul li:before {
+		content: "•";
+		color: var(--primary-color);
+		position: absolute;
+		left: 0;
+	}
+
+	.integration {
+		background: #f9fafb;
+		padding: 4rem 2rem;
+		text-align: center;
+	}
+
+	.integration h2 {
+		margin-bottom: 1rem;
+	}
+
+	.integration p {
+		color: #6b7280;
+		margin-bottom: 3rem;
+	}
+
+	.integration-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 2rem;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.integration-item {
+		padding: 2rem;
+		background: white;
+		border-radius: 0.5rem;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	}
+
+	.integration-item h4 {
+		color: var(--primary-color);
+		margin-bottom: 0.5rem;
+	}
+
+	.cta {
+		padding: 4rem 2rem;
+		text-align: center;
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
+	.cta h2 {
+		margin-bottom: 1rem;
+	}
+
+	.cta p {
+		margin-bottom: 2rem;
+		color: #6b7280;
+	}
+
+	.cta-buttons {
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
+	}
+
+	@media (max-width: 768px) {
+		h1 {
+			font-size: 2rem;
+		}
+
+		.subtitle {
+			font-size: 1.25rem;
+		}
+
+		.feature-list {
+			font-size: 1rem;
+		}
+
+		.cta-buttons {
+			flex-direction: column;
+		}
+	}
+</style> 
