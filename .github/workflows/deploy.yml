@@ -24,30 +24,12 @@ jobs:
       - name: Checkout your repository using git
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - name: Install, build, and upload
+        uses: withastro/action@v1
         with:
-          node-version: '18'
-          cache: 'npm'
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-
-      - name: Clean install dependencies
-        run: |
-          npm clean-install
-          npm install -g astro
-
-      - name: Build with Astro
-        run: |
-          npm run build
-        env:
-          NODE_ENV: production
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./dist
+          path: .
+          node-version: 18
+          package-manager: npm
 
   deploy:
     needs: build
