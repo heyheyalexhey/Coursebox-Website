@@ -13,6 +13,10 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.9.1"
+    "astro": "^5.9.1",
+    "@astrojs/node": "^8.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0"
   }
 }
